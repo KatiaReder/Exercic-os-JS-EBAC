@@ -1,0 +1,7 @@
+Algoritmo - Travessia Segura
+
+1° passo -> O homem deverá atravessar o rio com a cabra;
+2° passo -> O homem deverá travessar o rio com o lobo;
+3° passo -> O homem deverá voltar com a cabra;
+4° passo -> O homem deverá deixar a cabra e atravessar o rio com o maço de alfafa;
+5° passo -> O homem deverá pegar a cabra novamente e realizar a última travessia.
