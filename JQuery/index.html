@@ -29,10 +29,10 @@
                         <a class="nav-link" href="products.html">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="about.html" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contato</a>
+                        <a class="nav-link nav-modal-open" href="contact.html" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -174,7 +174,14 @@
             </div>
         </div>
     </div>
-    
+    <fieldset>
+        <input type="text" name="email" class="form-control" id="email">
+    </fieldset>
+       <fieldset>
+        <button type="submit" class="button" id="form-submit">Increver-se</button>
+    </fieldset>
+
+
     <div class="sub-footer">
         <div class="container">
             <div class="row">
@@ -186,10 +193,76 @@
                 </div>
             </div>
         </div>
+    <div>
+
+
+<!-- Modal Body -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">         
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contato" class="visually-hidden">
+<form action="post" class="form">
+<div class="mb-3">
+  <label for="nome" class="form-label">Nome</label>
+  <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+  <small id="helpNome" class="text-muted">Digite um nome válido </small>
+</div>
+<div class="mb-3">
+  <label for="email" class="form-label">Email</label>
+  <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email" aria-describedby="helpEmail">
+  <small id="helpEmail" class="text-muted">Digite um email válido </small>
+</div>
+<div class="mb-3">
+  <label for="date" class="form-label">Data</label>
+  <input type="date" name="date" id="date" class="form-control" placeholder="Data" aria-describedby="helpDate">
+  <small id="helpDate" class="text-muted">Digite uma data válido </small>
+</div>
+<div class="mb-3">
+  <label for="time" class="form-label">Hora</label>
+  <input type="time" name="time" id="time" class="form-control" placeholder="Hora" aria-describedby="helpTime">
+  <small id="helpTime" class="text-muted">Digite um tempo válido </small>
+</div>
+<div class="mb-3">
+  <label for="cep" class="form-label">CEP</label>
+  <input type="cep" name="cep" id="cep" class="form-control" placeholder="Cep" aria-describedby="helpCep">
+  <small id="helpCep" class="text-muted">Digite um CEP válido </small>
+</div>
+<div class="mb-3">
+  <label for="phone" class="form-label">Telefone</label>
+  <input type="phone" name="phone" id="phone" class="form-control" placeholder="Telefone" aria-describedby="helpPhone">
+  <small id="helpPhone" class="text-muted">Digite um telefone válido </small>
+</div>
+<div class="mb-3">
+  <label for="cpf" class="form-label">CPF</label>
+  <input type="cpf" name="cpf" id="cpf" class="form-control" placeholder="CPF" aria-describedby="helpCpf">
+  <small id="helpCpf" class="text-muted">Digite um telefone válido </small>
+</div>
+
+<button type="submit">Enviar</button>
+</form>
+</div>
+
+
+<div id="sobre" class="visually-hidden">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa facere velit placeat fugit odio omnis impedit dolorem harum eligendi id, hic dolorum corrupti veritatis assumenda laborum ab perspiciatis pariatur recusandae?</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos perspiciatis sed quam asperiores quia ex perferendis. Iure temporibus asperiores, incidunt eius laborum praesentium sint, cumque debitis nesciunt ad illum qui.</p>
+</div>
         
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="./vendor/owl/js/owl.js"></script>
+        <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
         <script src="./js/custom.js"></script>
     </body>
     </html>
