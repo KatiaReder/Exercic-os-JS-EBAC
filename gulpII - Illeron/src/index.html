@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
+    <!-- <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <title>Illeron - Fashion</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" width="250px" alt="Logo Illerons"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos" >Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#sobre" rel="sobre">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contato" rel="contato">Contato</a>
+                    </li>
+                
+                </ul>
+                <ul class="navbar-nav ml-90 login">
+                    <li class="nav-item">
+                        <a class="nav-link " id="create-user" href="#entrar" rel="entrar">Entrar</a>
+                    </li>
+                     <p class="nav-link nav-modal-open" >|</p>
+                    <li class="nav-item">
+                        <a class="nav-link nav-modal-open" a href="#conta"  rel="conta">Criar Conta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="featured" class="featured-items">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Inicio</h1>
+                    </div>
+                </div>
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="/images/banner1.jpg" class="w-100 d-block" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/banner2.jpg" class="w-100 d-block" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/banner4.jpg" class="w-100 d-block" alt="Third slide">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Destaques<a name="produtos"></a></h1>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="featured-item">
+                            <img src="/images/conj3.jpg" alt="Item 1">
+                            <h4>Conj. Preto e Branco</h4>
+                            <h6>R$ 70,00</h6>
+                            <a href="#breve" rel="breve" class="nav-modal-open">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="/images/calca1.jpg" alt="Item 2">
+                            <h4>Calça c/ Borboletas</h4>
+                            <h6>R$ 120,00</h6>
+                            <a href="#breve" rel="breve" class="nav-modal-open">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="/images/jaqueta9.jpg" alt="Item 3">
+                            <h4>Jaqueta Colegial</h4>
+                            <h6>R$ 150,00</h6>
+                            <a href="#breve" rel="breve" class="nav-modal-open">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="/images/conj5.jpg" alt="Item 4">
+                            <h4>Camisa Caveira</h4>
+                            <h6>R$ 90,00</h6>
+                            <a href="#breve" rel="breve" class="nav-modal-open">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="/images/calca5.jpg" alt="Item 5">
+                            <h4>Calça Jogger</h4>
+                            <h6>R$ 155,00</h6>
+                            <a href="#breve" rel="breve" class="nav-modal-open">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="/images/conj6.jpg" alt="Item 6">
+                            <h4>Conj. Dragão</h4>
+                            <h6>R$ 55,00</h6>
+                     <a href="#breve" rel="breve" class="nav-modal-open">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="/images/calca6.jpg" alt="Item 7">
+                            <h4>Calça c/ Emoji</h4>
+                            <h6>R$ 200,00</h6>
+                         <a href="#breve" rel="breve" class="nav-modal-open">
+                                Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <div class="subscribe-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Receba novidades<a name="contato"><a></h1>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="main-content">
+                        <p>Insira seus dados abaixo para receber informações atualizadas de nossos produtos</p>
+                        <div class="container">
+                            <form id="subscribe" class="form" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <fieldset>
+                                            <input name="email" type="text" class="form-control" id="email"  placeholder="Seu e-mail..." >
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo"><a name="sobre"></a>
+                        <img src="./src/images/logo.png" class="w-20" alt="">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#sobre" rel="sobre" >Sobre</a></li>
+                            <li><a href="#contato" rel="contato" >Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                        <p>Illerons Fashion &copy; Todos os direitos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">              
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div id="conta" class="visually-hidden">
+        <form action="post" class="form">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome Completo</label>
+              <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome" required>
+              <small id="helpNome" class="text-muted">
+                  Digite seu nome completo
+              </small>
+            </div>
+            <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu cep" aria-describedby="helpCEP" required>
+                <small id="helpCEP" class="text-muted">
+                    Digite um CEP válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu phone" aria-describedby="helpCelular" required>
+                <small id="helpCelular" class="text-muted">
+                    Digite um Telefone válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu cpf" aria-describedby="helpCPF" required>
+                <small id="helpCPF" class="text-muted">
+                    Digite um CPF válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail" required>
+                <small id="helpEmail" class="text-muted">
+                    Digite um e-mail válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="text" name="senha" id="senha" class="form-control" placeholder="Digite uma senha" aria-describedby="helpSenha" required>
+                <small id="helpSenha" class="text-muted">
+                    Digite uma senha válida
+                </small>
+            </div>
+            <button type="submit" class="btn btn-primary">Criar nova conta</button>
+        </form>
+    </div>
+
+
+    <div id="breve" class="visually-hidden">
+        <p>Em breve!</p>
+    </div>
+
+
+    <div id="dialog-form" title="Entrar">
+        <p class="validateTips">Necessário todos os campos.</p>
+ 
+    <form>
+        <fieldset>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password"  class="text ui-widget-content ui-corner-all">
+        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+    </form>
+</div>
+ 
+  
+    <!-- <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+    <script src="./vendor/owl/js/owl.js"></script>
+    <script src="./vendor/jquery-mask/jquery.mask.js"></script>
+    <script src="./vendor/jquery-ui/jquery-ui.js"></script> 
+    <script src="./js/scripts.min.js"></script>
+</body>
+</html>
