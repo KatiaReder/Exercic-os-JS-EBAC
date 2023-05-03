@@ -8,19 +8,20 @@ server.use(cors())
 server.use(bodyParser.urlencoded({extended: true}))
 
 server.use(express.json())
-const contacts = [
+const contacts = 
+[
     {
-    "name": "Katia"
-},
-{
-    "name": "Maria"
-},
-{
-    "name": "Alice"
-},
-{
-    "name": "Lia"
-},
+        "name": "Katia"
+    },
+    {
+        "name": "Maria"
+    },
+    {
+        "name": "Alice"
+    },
+    {
+        "name": "Lia"
+    },
 ]
 
 
