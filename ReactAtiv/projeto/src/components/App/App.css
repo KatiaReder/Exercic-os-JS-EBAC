@@ -1,0 +1,12 @@
+html{
+  background-color: #EEF6EE;
+}
+
+.principal{
+  display: flex;
+  justify-content: center;
+}
+
+.itens{
+  margin-left: 40px;
+}
